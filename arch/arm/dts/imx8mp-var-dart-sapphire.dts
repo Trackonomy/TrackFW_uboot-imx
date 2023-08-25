@@ -110,7 +110,25 @@
 	status = "okay";
 };
 
+&gpio1 {
+	mmc_V_select {
+		gpio-hog;
+		gpios = <8 0>;
+		output-high;
+		line-name = "mmc_vSelect";
+	};
+};
+
 &iomuxc {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_hog>;
+
+	pinctrl_hog: hoggrp {
+		fsl,pins = <
+		MX8MP_IOMUXC_GPIO1_IO08__GPIO1_IO08					0x19
+
+		>;
+	};
 
 	pinctrl_uart2: uart2grp {
 		fsl,pins = <
