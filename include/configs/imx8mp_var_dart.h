@@ -90,7 +90,7 @@
 	"fdt_high=0xffffffffffffffff\0"		\
 	"boot_fdt=try\0" \
 	"boot_fit=no\0" \
-	"fdt_file=imx8mp-var-som-sapphire.dtb\0" \
+	"fdt_file=undefined\0" \
 	"bootm_size=0x10000000\0" \
 	"ip_dyn=yes\0" \
 	"mmcdev="__stringify(CONFIG_SYS_MMC_ENV_DEV)"\0" \
@@ -125,7 +125,7 @@
 	"findfdt=" \
 		"if test $fdt_file = undefined; then " \
 			"if test $board_name = VAR-SOM-MX8M-PLUS; then " \
-				"setenv fdt_file imx8mp-var-som-symphony.dtb; " \
+				"setenv fdt_file imx8mp-var-som-sapphire.dtb; " \
 			"else " \
 				"if test $carrier_rev = legacy; then " \
 					"setenv fdt_file imx8mp-var-dart-dt8mcustomboard-legacy.dtb;" \
