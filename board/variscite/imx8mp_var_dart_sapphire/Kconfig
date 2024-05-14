@@ -1,0 +1,15 @@
+if TARGET_IMX8MP_VAR_DART_SAPPHIRE
+
+config SYS_BOARD
+	default "imx8mp_var_dart_sapphire"
+
+config SYS_VENDOR
+	default "variscite"
+
+config SYS_CONFIG_NAME
+	default "imx8mp_var_dart_sapphire"
+
+source "board/freescale/common/Kconfig"
+source "board/variscite/common/Kconfig"
+
+endif

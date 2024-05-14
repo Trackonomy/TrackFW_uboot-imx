@@ -125,7 +125,7 @@
 	"findfdt=" \
 		"if test $fdt_file = undefined; then " \
 			"if test $board_name = VAR-SOM-MX8M-PLUS; then " \
-				"setenv fdt_file imx8mp-var-som-sapphire.dtb; " \
+				"setenv fdt_file imx8mp-var-som-symphony.dtb; " \
 			"else " \
 				"if test $carrier_rev = legacy; then " \
 					"setenv fdt_file imx8mp-var-dart-dt8mcustomboard-legacy.dtb;" \
